@@ -13,4 +13,7 @@ new_york_city.csv,
 los_angeles.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+1. timedelta: https://docs.python.org/3.4/library/datetime.html?highlight=weekday;
+2. rename column: https://note.nkmk.me/en/python-pandas-dataframe-rename/;
+3. to_frame(): https://www.geeksforgeeks.org/python-pandas-series-to_frame/;
+4. df to dictionary: https://stackoverflow.com/questions/31324310/how-to-convert-rows-in-dataframe-in-python-to-dictionaries
