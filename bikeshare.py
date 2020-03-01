@@ -306,10 +306,10 @@ def raw_data(df):
         df_listed = df.to_dict('records') # convert to list
 
         # initialize variables
-        i = 0    #counter
+        count = 0    #counter
         N = 5  #limit
 
-        outputs = df_listed[i:(i+N)]
+        outputs = df_listed[count:(count+N)]
         for output in outputs:
             print(output)
         print('\n')
@@ -324,14 +324,14 @@ def raw_data(df):
 
         # Loop and print N inputs each time
         while option_more != 'no':
-            i += N
-            outputs = df_listed[i:(i+N)] # slice through the list to display N inputs
+            count += N
+            outputs = df_listed[count:(count+N)] # slice through the list to display N inputs
             for output in outputs:
                 print(output)
             print('\n')
 
             # Breaks the loop if last dataset has been displayed
-            if i+N > len(df_listed):
+            if count+N > len(df_listed):
                 break
             # else continue viewing data
             else:
